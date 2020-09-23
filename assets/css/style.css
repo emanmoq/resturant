@@ -1,0 +1,534 @@
+
+
+/*Call Fonts*/
+@font-face{
+    font-family:JosefinSans-Regular;
+    src:url("../fonts/JosefinSans-Regular.ttf")
+}
+@font-face{
+    font-family:JosefinSans-SemiBold;
+    src:url("../fonts/JosefinSans-SemiBold.ttf")
+}
+
+
+/* public */
+img{
+    width:100%;
+}
+ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+p{
+    margin:0;
+}
+a{
+text-decoration: none;
+color:black;
+}
+a:hover{
+    color:black;
+    text-decoration: none;
+}
+body{
+    box-sizing: border-box;
+    font-family:JosefinSans-Regular;
+    position: relative;
+    overflow-x: hidden;
+    font-size: 16px;;
+    background-color: #F8F0EF;
+    color:#121212;
+}
+.imgContainer{
+    position: absolute;
+    width:100%;
+    height:500px;
+    background-repeat: no-repeat;
+    right:0;
+    top:0;
+    z-index: 0;
+    display: none;
+}
+section{
+    padding-top:90px;
+}
+
+/*******Header ****************/
+
+/********Navbar**********/
+.navbar-brand{
+    width:6.4vw;
+    font-size: 2.5em;
+    font-family:"Lato-Semibold";
+}
+.navbar{
+    width:100%;
+    padding-left:0;
+}
+.nav-item{
+    padding-left:25px;
+    padding-right:25px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-family:"Lato-Medium";
+    font-size:1.25em;
+    color:#4663CB;
+    position: relative;
+padding:0
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active{
+    color:#96631F;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:before{
+    width:0;
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    background-color:#96631F;
+    height:1px;
+}
+.navbar-expand-lg .navbar-nav .nav-link.active::before{
+    width:100%;
+    transition:width .5s;
+}
+
+button.navbar-toggler {
+    position: relative;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 0;
+    opacity: 1;
+    border:1px solid #96631F;
+    text-align: center;
+    width:50px;
+}
+button.navbar-toggler i {
+    background-color: #00438B;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    animation: nav2 0.8s backwards;
+    animation-direction: reverse;
+    margin-bottom:5px;
+}
+button.navbar-toggler i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: nav1 0.8s backwards;
+    animation: nav1 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;}
+.mobileMenu i:nth-child(3) {
+        -webkit-animation: nav3 0.8s backwards;
+        animation: nav3 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+.scrollNav {
+        top: 0 !important;
+        z-index: 99999999999999999999999;
+        animation-duration: .5s;
+        background:#fff;
+        position: fixed !important;
+        box-shadow: rgba(0, 0, 0, 0.1) 2px 3px 20px 3px;
+        transition: 1s all;
+        left: 0;
+        width:100%;
+        right:0;
+        padding:5px 0;
+        transition: all .5s;;
+        animation:sticky;
+    }
+    .slider-section{ 
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    .slider-section .overlay{
+        z-index: 1;
+    }
+    
+    .slider-section .carousel-inner .carousel-item{
+    width: 100%;
+    height: 100%;
+    }
+    .slider-section .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 100%;
+    
+    }
+    .carousel-inner {
+        justify-content: center;
+        height:850px;
+    }
+    .carousel-inner .carousel-caption{
+        top: 40%;
+    }
+    .carousel-caption {
+        text-align: center;
+    bottom: 25%;
+    max-width: 600px;;
+    margin: auto;
+    
+    }
+    
+    .carousel-caption h1{
+    font-size: 4.375em;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    visibility: visible;
+    -webkit-animation-delay: .6s;
+     -moz-animation-delay: .6s;
+     animation-delay: .6s;
+     color:white;
+     font-family:JosefinSans-SemiBold;
+   
+    }
+    .carousel-indicators li{
+width:18px;
+height:18px;
+border-radius: 50%;
+margin:7px;;
+background-color: white;;
+opacity: 1;
+    }
+    .carousel-indicators li.active{
+        background-color:#96631F ;
+    }
+
+
+/****************Animation of mobile Toggler****************/
+@-webkit-keyframes nav1 {
+    50% {
+      -webkit-transform: rotate(0deg); }
+    100% {
+      -webkit-transform: rotate(45deg); } }
+  @keyframes nav1 {
+    50% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(45deg); } }
+
+  @-webkit-keyframes nav2 {
+    0% {
+      -webkit-transform: translateY(0px) rotate(0deg); }
+    50% {
+      -webkit-transform: translateY(9px) rotate(0deg); }
+    100% {
+      -webkit-transform: translateY(9px) rotate(135deg); } }
+  @keyframes nav2 {
+    0% {
+      transform: translateY(0px) rotate(0deg); }
+    50% {
+      transform: translateY(9px) rotate(0deg); }
+    100% {
+      transform: translateY(9px) rotate(135deg); } }
+  @-webkit-keyframes nav3 {
+    0% {
+      -webkit-transform: translateY(0px) rotate(0deg); }
+    50% {
+      -webkit-transform: translateY(-9px) rotate(0deg); }
+    100% {
+      -webkit-transform: translateY(-9px) rotate(135deg); } }
+  @keyframes nav3{
+    0% {
+      transform: translateY(0px) rotate(0deg); }
+    50% {
+      transform: translateY(-9px) rotate(0deg); }
+    100% {
+      transform: translateY(-9px) rotate(135deg); } 
+    }
+
+/*-----------Menu Section -------*/
+.menuBox{
+    padding:50px 30px;
+    border:2px solid #96631F ;
+    text-align: center;
+    border-radius: 10px;;
+    transition: all .5s;
+    height:500px;
+}
+.menuBox h2{
+    font-size:2.375em;
+    font-family:JosefinSans-SemiBold;
+    margin-bottom:40px;
+}
+.menuBox p{
+    font-size: 1.5em;
+    margin-bottom:35px;
+
+}
+.menuBox:hover{
+    background-color: white;
+    box-shadow: 0 3px 26px rgba(0, 0, 0, 0.1);
+    transition: all .5s;;
+    margin-top:-20px;
+    border:1px solid  transparent;
+}
+
+.menuImg{
+    width:130px;
+    margin:0 auto;
+}
+.generalBtn{
+    background-color: #96631F;
+    color:white;
+    width:150px;
+    height:50px;
+    border-radius: 10px;
+    font-size :1.125em;
+    border:1px solid #96631F;
+    margin-top:60px;
+    line-height: 41px;
+}
+.generalBtn:hover{
+background-color: transparent;
+color:#96631F;
+transition: all .5s;;
+
+}
+/*---------  Gallery --------------*/
+.title span{
+font-size:1.125em;
+}
+.title h4{
+font-size: 2.5em;
+color:#96631F;
+margin-top:10px;
+font-family:JosefinSans-SemiBold;
+}
+#gallery .title{
+    margin-bottom: 70px;;
+}
+.GalleryImg{
+    width:100%;
+    height:200px;
+    overflow:hidden;
+    border-radius: 10px;
+}
+.GalleryImg img{
+    transition: all .5s;}
+
+.GalleryImg:hover img{
+    transform: scale(1.1);
+    transition: all .5s;;}
+.ReservationImg{
+    height:600px;
+}
+.resImg{
+    border-radius: 10px;
+    width:100%;
+    overflow: hidden;
+    margin-bottom:20px;
+
+}
+.resImg img{
+    height:100%;
+}
+.ReservationImg2{
+height:300px;
+}
+.resTitle.title{
+    margin-top:20px;
+}
+.resTitle p{
+    font-size:1.375em;
+}
+.resLink{
+    color:#96631F;
+    text-decoration: underline;
+    margin-top:10px;
+    font-size:1.375em;
+    font-family:JosefinSans-SemiBold;
+    display: block;
+    margin-bottom:24px;
+
+}
+/*------------- online Orders------------*/
+figure{
+    position: relative;
+    width:100%;
+    z-index: 2;
+    margin-bottom: 0;
+    border-radius: 10px;
+    overflow:hidden;
+}   
+ figure:before {
+    position: absolute;
+    content: "";
+ 
+    background:#121212;
+    opacity: 0;
+    top: 20%;
+    left: 20%;
+    bottom:20%;
+    right:20%;
+}
+figure:hover:before{
+    opacity: .54;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:100%;
+}
+ figure figcaption {
+     top:0;
+     left:0;
+     width:100%;
+     height:100%;
+    bottom: 15px;
+    opacity: 0;
+    color: white;
+position: absolute;
+z-index: 111;
+
+transition: all .5s;
+}
+figure:hover figcaption{
+    opacity: 1;
+    transition: all .5s;
+}
+figcaption .add{
+    position: absolute;
+    border:3px solid white;
+    color:white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+    width: 55px;
+    height: 55px;
+    display: block;
+    font-size: 35px;
+    top: 38%;
+    left: 39%;
+}
+.mealName{
+    position: absolute;
+    background-color: white;
+    color:#96631F;
+    width:140px;
+    height:40px;
+    left:-10px;
+    top:-10px;
+    text-align: center;
+    line-height: 45px;
+    z-index: 3333;
+    transition: all .5s;
+
+}
+.onlineOreserContainer:hover .mealName {
+    background-color: #96631F;
+    color:white;
+    transition: all .5s;
+
+}
+.onlineOreserContainer{
+    position: relative;
+}
+#OnlineOrder{
+    padding-bottom:100px;
+}
+/*---------Make Reservation  -----------*/
+#MakeReservation{
+    background-color: white;
+    padding-bottom:100px;
+}
+.form-group{
+    width:23%;
+    margin-right:25px;
+    display: inline-block;
+    margin-bottom: 0;;
+    float: left;
+}
+.selectric-wrapper {
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #96631F;
+    min-height: 20px;
+height:40px;}
+
+form button.generalBtn{
+display: inline-block;
+height:40px;
+line-height: 30px;;
+margin-top:0;
+width:21%;
+float: left;
+    }
+    .selectric-wrapper .button,.selectric-wrapper .label{
+        color:#96631F;
+        font-size: 22px;;
+    }
+    .selectric-items li.selected{
+        color:#96631F;
+    }
+    .selectric-items li{
+        color:#96631F;
+    }
+    .selectric-items li:hover{
+        color:white;
+        background-color: #96631F;
+    }
+    #MakeReservation .title{
+        margin-bottom:50px;
+    }
+ /*--------Footer ---------*/
+ #footer{
+     padding-bottom:70px;
+ }
+ .footerLogo{
+     border-right:2px solid #121212;
+     padding:20px;
+     display: inline-block;
+     width:75px;
+     padding:10px;
+     float: left;
+ }
+ .footerList{
+     display: inline-block;
+     float: left;
+     margin-left: 15px;
+ }
+ .footerList p{
+     font-size: 1.125em;
+     color:#121212;
+     margin-bottom: 10px;
+ }
+ .copyRightsText{
+     margin-left:80px;
+     margin-top:30px;
+ }
+ .social li{
+     display: inline-block;
+     margin-right:10px;
+ }
+ .social li a{
+color:#121212;
+font-size:16px;
+ }
+ .social li:hover a{
+     color:#96631F
+ }
+ .social li:hover  .lni-facebook-filled{
+    border:1px solid #96631F;
+} 
+ .lni-facebook-filled{
+     border:1px solid #121212;
+     border-radius: 50%;;
+ }
+/*-------Responsive -------*/
+/*--------Small Screen -------*/
+
+@media(max-width:767px){
+
+}
