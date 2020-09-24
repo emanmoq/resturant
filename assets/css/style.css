@@ -100,6 +100,14 @@ padding:0
     transition:all .5s;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link:hover::before{
+    width:100%;
+    transition:all .5s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color:#96631F;
+}
+
 button.navbar-toggler {
     position: relative;
     border: none;
@@ -588,9 +596,7 @@ height:700px;
     }
 }
 @media(max-width:1024px){
-    .navbar-expand-lg .navbar-nav .nav-link:before{
-        display: none;
-    }
+
     .form-group{
         margin-bottom:10px;
         width:45%;
@@ -605,12 +611,9 @@ height:700px;
         font-size:14px;
     }
 
-    .navbar-expand-lg .navbar-nav .nav-link:before{
-        display: block;
-    }
-    .navbar-expand-lg .navbar-nav .nav-link:hover:before{
+    .navbar-expand-lg .navbar-nav .nav-link:hover::before{
         width:100%;
-        animation: .5s all;
+        transition:all .5s;
     }
     .carousel-inner{
         height:400px;
