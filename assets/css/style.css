@@ -55,6 +55,9 @@ section{
 }
 
 /*******Header ****************/
+header{
+    padding:10px;
+}
 
 /********Navbar**********/
 .navbar-brand{
@@ -141,7 +144,7 @@ button.navbar-toggler i:nth-child(2) {
         left: 0;
         width:100%;
         right:0;
-        padding:5px 0;
+        padding:5px 10px;
         transition: all .5s;;
         animation:sticky;
     }
@@ -152,6 +155,14 @@ button.navbar-toggler i:nth-child(2) {
     }
     .slider-section .overlay{
         z-index: 1;
+    }
+    .overlay{
+        position: absolute;
+        width:100%;
+        left:0;
+        bottom:0;
+        top:0;
+        background-image:linear-gradient(to right ,rgba(18, 18, 18, .54),rgba(18, 18, 18, 0))
     }
     
     .slider-section .carousel-inner .carousel-item{
@@ -529,6 +540,82 @@ font-size:16px;
 /*-------Responsive -------*/
 /*--------Small Screen -------*/
 
-@media(max-width:767px){
 
+
+@media(max-width:1150px){
+    .menuBox{
+        height:600px;
+        margin-bottom:20px;
+    }
+    .carousel-inner{
+height:700px;
+    }
+    .footerLogo{
+    display: block;
+    float: none;
+    margin: auto;
+    border: 0;
+    }
+    .copyRightsText{
+        text-align: center;
+    }
 }
+@media(max-width:1024px){
+    .navbar-expand-lg .navbar-nav .nav-link:before{
+        display: none;
+    }
+    .form-group{
+        margin-bottom:10px;
+        width:45%;
+    }
+    .footerList{
+        margin-bottom:20px;
+    }
+    
+}
+@media(max-width:767px){
+    body{
+        font-size:14px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:before{
+        display: none;
+    }
+    .carousel-inner{
+        height:400px;
+            }
+            .carousel-inner .carousel-caption {
+                top: 20%;
+            }
+.GalleryImg{
+    margin-bottom:10px;
+}
+.ReservationImg{
+    height:400px
+}
+section{
+    padding-top:50px;
+}
+.generalBtn{
+    margin-top:20px;
+}
+.form-group{
+    width:100%;
+}
+form button.generalBtn{
+    width:100%;
+}
+#MakeReservation{
+    padding-bottom:20px;
+}
+.footerLogo{
+  width:20%
+}
+.footerList{
+    margin-bottom: 20px;;
+}
+#footer {
+    padding-bottom: 20px;
+}
+
+        }
