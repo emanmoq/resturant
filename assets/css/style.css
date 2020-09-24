@@ -61,7 +61,7 @@ header{
 
 /********Navbar**********/
 .navbar-brand{
-    width:6.4vw;
+    width:266px;
     font-size: 2.5em;
     font-family:"Lato-Semibold";
 }
@@ -231,11 +231,11 @@ button.navbar-toggler:hover i:first-child {
      font-family:JosefinSans-SemiBold;
    
     }
-    .carousel-indicators li{
-width:18px;
-height:18px;
-border-radius: 50%;
-margin:7px;;
+    .carousel-indicators li {
+        width: 18px !important;
+        height: 18px !important;
+        border-radius: 50%;
+        margin: 0 7px !important;
 background-color: white;;
 opacity: 1;
     }
