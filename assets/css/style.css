@@ -117,17 +117,26 @@ button.navbar-toggler i {
     display: block;
     width: 100%;
     height: 3px;
-    animation: nav2 0.8s backwards;
-    animation-direction: reverse;
     margin-bottom:5px;
 }
-button.navbar-toggler i:nth-child(2) {
+.button.navbar-toggler:hover i:nth-child(1){
+    margin: 5px 0;
+    animation: nav3 0.8s backwards;
+    animation-direction: reverse;
+}
+button.navbar-toggler:hover i:first-child {
     margin: 5px 0;
     -webkit-animation: nav1 0.8s backwards;
-    animation: nav1 0.8s backwards;
+    animation: nav2 0.8s backwards;
     -webkit-animation-direction: reverse;
     animation-direction: reverse;}
 .mobileMenu i:nth-child(3) {
+        -webkit-animation: nav3 0.8s backwards;
+        animation: nav3 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+    button.navbar-toggler:hover i:nth-child(3){
         -webkit-animation: nav3 0.8s backwards;
         animation: nav3 0.8s backwards;
         -webkit-animation-direction: reverse;
@@ -217,11 +226,17 @@ opacity: 1;
 
 /****************Animation of mobile Toggler****************/
 @-webkit-keyframes nav1 {
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
     50% {
-      -webkit-transform: rotate(0deg); }
+      -webkit-transform: rotate(45deg); }
     100% {
-      -webkit-transform: rotate(45deg); } }
+      -webkit-transform: rotate(90deg); } }
   @keyframes nav1 {
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
     50% {
       transform: rotate(0deg); }
     100% {
@@ -233,28 +248,28 @@ opacity: 1;
     50% {
       -webkit-transform: translateY(9px) rotate(0deg); }
     100% {
-      -webkit-transform: translateY(9px) rotate(135deg); } }
+      -webkit-transform: translateY(18px) rotate(135deg); } }
   @keyframes nav2 {
     0% {
       transform: translateY(0px) rotate(0deg); }
     50% {
       transform: translateY(9px) rotate(0deg); }
     100% {
-      transform: translateY(9px) rotate(135deg); } }
+      transform: translateY(18px) rotate(135deg); } }
   @-webkit-keyframes nav3 {
     0% {
       -webkit-transform: translateY(0px) rotate(0deg); }
     50% {
       -webkit-transform: translateY(-9px) rotate(0deg); }
     100% {
-      -webkit-transform: translateY(-9px) rotate(135deg); } }
+      -webkit-transform: translateY(-18px) rotate(135deg); } }
   @keyframes nav3{
     0% {
       transform: translateY(0px) rotate(0deg); }
     50% {
       transform: translateY(-9px) rotate(0deg); }
     100% {
-      transform: translateY(-9px) rotate(135deg); } 
+      transform: translateY(-18px) rotate(135deg); } 
     }
 
 /*-----------Menu Section -------*/
