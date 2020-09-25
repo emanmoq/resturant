@@ -238,6 +238,7 @@ button.navbar-toggler:hover i:first-child {
         margin: 0 7px !important;
 background-color: white;;
 opacity: 1;
+border:0 !important;
     }
     .carousel-indicators li.active{
         background-color:#96631F ;
